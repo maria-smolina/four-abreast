@@ -1,0 +1,17 @@
+body {
+    margin: 100px 200px;
+}
+
+td {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+}
+
+.first {
+    background-color: rgb(255, 175, 176);
+}
+
+.second {
+    background-color: rgb(180, 220, 255);
+}
