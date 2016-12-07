@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class GameMoveController {
 
-    @RequestMapping(method= RequestMethod.POST, value="/gameMove")
+    @RequestMapping(method = RequestMethod.POST, value = "/gameMove")
     public void gameMove(@RequestBody GameMove gameMove) {
         //saving to db
     }
