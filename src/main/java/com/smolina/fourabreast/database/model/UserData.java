@@ -1,16 +1,21 @@
-package com.smolina.fiveabreast.model;
+package com.smolina.fourabreast.database.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
+
 
 @Entity
-public class User {
+@Table(name = "userdata")
+public class UserData {
 
     @Id
     private Integer id;
     private String login;
     private String password;
     private String name;
+
+    public UserData() {};
 
     public Integer getId() {
         return id;

@@ -1,5 +1,10 @@
 body {
+    font-size: 0;
     margin: 100px 200px;
+}
+
+table {
+    border-collapse: collapse;
 }
 
 td {

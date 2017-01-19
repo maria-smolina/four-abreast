@@ -1,4 +1,4 @@
-package com.smolina.fiveabreast.model;
+package com.smolina.fourabreast.model;
 
 import com.sun.istack.internal.NotNull;
 import java.util.Objects;

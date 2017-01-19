@@ -1,4 +1,4 @@
-package com.smolina.fiveabreast.model;
+package com.smolina.fourabreast.model;
 
 public class Rating {
     private String login;

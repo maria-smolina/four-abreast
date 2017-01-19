@@ -1,4 +1,4 @@
-package com.smolina.fiveabreast.config;
+package com.smolina.fourabreast.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

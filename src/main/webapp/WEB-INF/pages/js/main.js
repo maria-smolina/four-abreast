@@ -28,7 +28,7 @@ $(document).ready(function () {
 
         $.ajax({
             method: 'POST',
-            url: '/gameMove',
+            url: '/addGameMove',
             contentType: "application/json",
             data: JSON.stringify(move)
         });
@@ -37,12 +37,13 @@ $(document).ready(function () {
     /* Helpers */
     function retrieveGameMove() {
         var move = {
-            userLogin: "",
-            enemyLogin: "",
-            position: {
-                row: this.dataset.row,
-                column: this.dataset.column
-            }
+            id: 1,
+            gameId: 1,
+            userId: 1,
+            // position: {
+            //     row: this.dataset.row,
+            //     column: this.dataset.column
+            // }
         };
         return move;
     }
