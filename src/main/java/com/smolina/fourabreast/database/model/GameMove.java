@@ -6,26 +6,53 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "GAME_MOVE")
+@Table(name = "game_move")
 public class GameMove {
-
     @Id
     private Integer id;
 
-    @Column(name = "GAME_ID")
+    @Column(name = "game_id")
     private Integer gameId;
 
-    @Column(name = "USER_ID")
-    private Integer userId;
+    @Column(name = "sender_id")
+    private Integer senderId;
 
-    @Column(name = "ROW")
+    private String type;
+
     private Integer row;
 
-    @Column(name = "COLUMN")
     private Integer column;
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getGameId() {
+        return gameId;
+    }
+
+    public void setGameId(Integer gameId) {
+        this.gameId = gameId;
+    }
+
+    public Integer getSenderId() {
+        return senderId;
+    }
+
+    public void setSenderId(Integer senderId) {
+        this.senderId = senderId;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public Integer getRow() {
@@ -44,26 +71,7 @@ public class GameMove {
         this.column = column;
     }
 
-    //    private TwoDimensionalFieldPosition position;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Integer getGameId() {
-        return gameId;
-    }
-
-    public void setGameId(Integer gameId) {
-        this.gameId = gameId;
-    }
-
-
-//    public TwoDimensionalFieldPosition getPosition() {
+    //    public TwoDimensionalFieldPosition getPosition() {
 //        return position;
 //    }
 //

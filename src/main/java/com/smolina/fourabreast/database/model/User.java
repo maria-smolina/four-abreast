@@ -6,16 +6,18 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "userdata")
-public class UserData {
-
+@Table(name = "user")
+public class User {
     @Id
     private Integer id;
+
     private String login;
+
     private String password;
+
     private String name;
 
-    public UserData() {};
+    public User() {};
 
     public Integer getId() {
         return id;

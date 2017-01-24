@@ -17,8 +17,7 @@ public class GameMoveController {
 
     @RequestMapping(method = RequestMethod.POST, value = "/addGameMove")
     public void addGameMove(@RequestBody GameMove gameMove) {
-        GameMove gameMove2 = gameMoveRepository.findOne(1);
-        System.out.println(gameMove2);
+        gameMoveRepository.findAll();
     }
 
 }

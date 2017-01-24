@@ -1,12 +1,10 @@
 package com.smolina.fourabreast.model;
 
-import com.sun.istack.internal.NotNull;
 import java.util.Objects;
 
-
 public class TwoDimensionalFieldPosition {
-    @NotNull private Integer row;
-    @NotNull private Integer column;
+    private Integer row;
+    private Integer column;
 
     public TwoDimensionalFieldPosition() {};
 
