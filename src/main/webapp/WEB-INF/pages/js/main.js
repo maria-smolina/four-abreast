@@ -37,9 +37,9 @@ $(document).ready(function () {
     /* Helpers */
     function retrieveGameMove() {
         var move = {
-            id: 1,
-            gameId: 1,
-            userId: 1,
+            gameId: 512,
+            senderId: 1234,
+            type: "WIN"
             // position: {
             //     row: this.dataset.row,
             //     column: this.dataset.column

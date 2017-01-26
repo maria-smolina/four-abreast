@@ -18,6 +18,8 @@ public class GameMoveController {
     @RequestMapping(method = RequestMethod.POST, value = "/addGameMove")
     public void addGameMove(@RequestBody GameMove gameMove) {
         gameMoveRepository.findAll();
+        gameMoveRepository.save(gameMove);
+
     }
 
 }

@@ -1,14 +1,13 @@
 package com.smolina.fourabreast.database.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "game_move")
 public class GameMove {
     @Id
+    @GeneratedValue(generator = "game_move_id_seq")
+    @SequenceGenerator(sequenceName = "game_move_id_seq", name = "game_move_id_seq")
     private Integer id;
 
     @Column(name = "game_id")
@@ -21,7 +20,7 @@ public class GameMove {
 
     private Integer row;
 
-    private Integer column;
+    private Integer col;
 
     public Integer getId() {
         return id;
@@ -63,12 +62,12 @@ public class GameMove {
         this.row = row;
     }
 
-    public Integer getColumn() {
-        return column;
+    public Integer getCol() {
+        return col;
     }
 
-    public void setColumn(Integer column) {
-        this.column = column;
+    public void setCol(Integer col) {
+        this.col = col;
     }
 
     //    public TwoDimensionalFieldPosition getPosition() {
