@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "game_board")
-public class GameBoard {
+public class Game {
     @Id
     private Integer id;
 
