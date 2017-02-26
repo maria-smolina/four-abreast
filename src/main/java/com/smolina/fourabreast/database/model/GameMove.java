@@ -69,12 +69,4 @@ public class GameMove {
     public void setCol(Integer col) {
         this.col = col;
     }
-
-    //    public TwoDimensionalFieldPosition getPosition() {
-//        return position;
-//    }
-//
-//    public void setPosition(TwoDimensionalFieldPosition position) {
-//        this.position = position;
-//    }
 }

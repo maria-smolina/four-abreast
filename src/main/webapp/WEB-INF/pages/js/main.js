@@ -4,10 +4,7 @@ $(document).ready(function () {
     };
 
     var constants = {
-
     };
-
-
 
     function initVars() {
     }
@@ -19,6 +16,15 @@ $(document).ready(function () {
     function init() {
         initVars();
         bindEvents();
+        startGame();
+    }
+
+    function startGame() {
+        $.ajax({
+            method: 'POST',
+            url: '/startGame',
+            contentType: "application/json"
+        });
     }
 
 
@@ -37,13 +43,11 @@ $(document).ready(function () {
     /* Helpers */
     function retrieveGameMove() {
         var move = {
-            gameId: 512,
-            senderId: 1234,
-            type: "WIN"
-            // position: {
-            //     row: this.dataset.row,
-            //     column: this.dataset.column
-            // }
+            gameId: 1,
+            senderId: 1,
+            type: "WIN",
+            row: this.dataset.row - 1,
+            col: this.dataset.col - 1
         };
         return move;
     }

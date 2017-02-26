@@ -12,7 +12,7 @@ public class Game {
     private Integer id;
 
     @Column(name = "board")
-    private String board;
+    private int[][] board;
 
     @Column(name = "first_user_id")
     private Integer firstUserId;
@@ -28,11 +28,11 @@ public class Game {
         this.id = id;
     }
 
-    public String getBoard() {
+    public int[][] getBoard() {
         return board;
     }
 
-    public void setBoard(String board) {
+    public void setBoard(int[][] board) {
         this.board = board;
     }
 

@@ -1,6 +1,5 @@
 package com.smolina.fourabreast.config;
 
-import com.smolina.fourabreast.database.repository.GameMoveRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -16,7 +15,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 @Configuration
-@EnableJpaRepositories(basePackageClasses = {GameMoveRepository.class})
+@EnableJpaRepositories(basePackages = {"com.smolina.fourabreast.database.repository"})
 @EnableTransactionManagement
 class DataBaseConfig {
 
