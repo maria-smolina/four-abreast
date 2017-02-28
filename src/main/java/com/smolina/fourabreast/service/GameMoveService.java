@@ -36,13 +36,13 @@ public class GameMoveService {
         int row = gameMove.getRow();
         int column = gameMove.getCol();
         if (row < 0 || row >= board.length ||
-            column < 0 || column >= board[0].length) {
+                column < 0 || column >= board[0].length) {
             throw new IncorrectGameMoveException("Out of board's bounds");
         }
         if (board[row][column] != 0) {
             throw new IncorrectGameMoveException("Cell is occupied");
         }
-        if (row > 0 && board[row - 1][column] == 0) {
+        if (row < board.length - 1 && board[row + 1][column] == 0) {
             throw new IncorrectGameMoveException("Bottom cell is empty");
         }
     }
